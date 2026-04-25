@@ -1,0 +1,6 @@
+[submodule "fresh_leaf"]
+	path = fresh_leaf
+	url = https://github.com/SEEDOFT/fresh_leaf.git
+[submodule "FreshLeafApi"]
+	path = FreshLeafApi
+	url = https://github.com/SEEDOFT/FreshLeafApi.git

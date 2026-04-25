@@ -1,1 +1,58 @@
-# FreshLeaf
+# FreshLeaf Ecosystem 🌿
+
+Welcome to the **FreshLeaf** project, a modern B2C organic vegetable marketplace designed for Cambodia. This repository serves as the **Master Controller** for the entire ecosystem, linking the backend API and the mobile application.
+
+## 🚀 The Ecosystem
+- **[FreshLeafApi](./FreshLeafApi)**: A high-performance Laravel 13 backend powered by PHP 8.5. It manages the marketplace logic, multi-vendor profiles, dual-currency pricing (USD/KHR), and a private Hybrid AI Assistant.
+- **[fresh_leaf](./fresh_leaf)**: A beautiful Flutter + GetX mobile application for consumers to browse, purchase, and interact with the AI assistant.
+
+---
+
+## 🛠️ Getting Started (New PC Setup)
+
+### 1. Clone the Project
+This repository uses **Git Submodules**. To clone everything (including the API and Mobile app) in one command, run:
+
+```bash
+git clone --recursive https://github.com/SEEDOFT/FreshLeaf.git
+```
+
+*If you already cloned it without the submodules, run:*
+```bash
+git submodule init
+git submodule update
+```
+
+### 2. Backend Setup (FreshLeafApi)
+```bash
+cd FreshLeafApi
+composer install
+cp .env.example .env          # Update your DB and AI settings
+php artisan key:generate
+php artisan migrate --seed
+php ai/setup-ai.php           # Download local AI engine & model
+```
+
+### 3. Mobile Setup (fresh_leaf)
+```bash
+cd fresh_leaf
+flutter pub get
+# Ensure your .env points to the correct API_URL
+```
+
+---
+
+## 💎 Tech Stack & Features
+- **Backend**: Laravel 13, PHP 8.5 (Property Hooks, Pipe Operator, Asymmetric Visibility).
+- **Frontend**: Flutter, GetX State Management, Dio.
+- **AI**: Local Llama.cpp engine + Hybrid Web Search Bridge for real-time internet data.
+- **UI**: Modern Glassmorphism Design with SPA mode enabled.
+- **Marketplace**: B2C model with admin commission logic and verified vendor identities.
+
+## 📄 Project Documentation
+- **[Contract Checklist](./PROJECT_CONTRACT_CHECKLIST.md)**: Live status of API vs Mobile endpoint synchronization.
+- **[Backend Docs](./FreshLeafApi/README.md)**: Detailed API and AI architecture.
+- **[Mobile Docs](./fresh_leaf/README.md)**: App structure and build guides.
+
+---
+Developed by **SEEDOFT**.

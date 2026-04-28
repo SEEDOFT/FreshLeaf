@@ -19,6 +19,8 @@ license: MIT
   - `views/`: Main UI entry point.
   - `widgets/`: Extracted reusable components.
 - **No private nested widgets in view files.** Extract everything with a `build()` method to `widgets/` and use a barrel export.
+- **Push Notifications**: Use the centralized `NotificationService` (GetX Service) for all FCM and local notification handling. Ensure `fvm dart pub global run flutterfire_cli:flutterfire configure` is run to generate `firebase_options.dart`.
+- **Firebase Initialization**: Firebase MUST be initialized in `AppBootstrap` before any services that depend on it are started.
 - **Property Setters**: For simple property updates in controllers, use actual Dart setters (`set sort(T value)`) and corresponding getters to satisfy the `use_setters_to_change_properties` and `avoid_setters_without_getters` rules.
 
 ## 2. Typing & Safety

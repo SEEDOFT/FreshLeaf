@@ -1,6 +1,6 @@
-# FreshLeaf Ecosystem 🌿
+# FreshLeaf Organics 🌿
 
-Welcome to the **FreshLeaf** project, a modern B2C organic vegetable marketplace designed for Cambodia. This repository serves as the **Master Controller** for the entire ecosystem, linking the backend API and the mobile application.
+Welcome to **FreshLeaf Organics**, a modern B2C organic vegetable marketplace designed for Cambodia. This repository serves as the **Master Controller** for the entire ecosystem, linking the backend API and the mobile application.
 
 ## 🚀 The Ecosystem
 - **[FreshLeafApi](./FreshLeafApi)**: A high-performance Laravel 13 backend powered by PHP 8.5. It manages the marketplace logic, multi-vendor profiles, dual-currency pricing (USD/KHR), and a private Hybrid AI Assistant.

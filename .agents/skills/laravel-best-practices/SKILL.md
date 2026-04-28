@@ -12,7 +12,8 @@ metadata:
 
 - **Property Hooks**: Use for all calculated model properties (e.g., `activePrice`). Do not use legacy getter/setter methods.
 - **Asymmetric Visibility**: Use `public private(set)` for properties that should be readonly externally but modifiable by model logic.
-- **Pipe Operator (`|>`)**: Use for multi-step data or price transformations to ensure readable code.
+- **Static Closures**: Always use `static fn()` or `static function()` for callables that do not reference `$this` to optimize performance.
+- **Pipe Operator (`|>`)**: Use for all multi-step data or price transformations to ensure readable code.
 - **Strict Types**: Every PHP file MUST start with `declare(strict_types=1);`.
 
 ## 1. Database & History Architecture

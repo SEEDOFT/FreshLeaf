@@ -20,7 +20,7 @@ description: Apply this skill when writing, reviewing, or refactoring Flutter co
   - `rules/flutter_writing_rules.md` for FreshLeaf architecture and code style.
 
 ## FreshLeaf Defaults
-- Flutter version is `3.32.2` from `.fvmrc`.
+- Flutter version is `stable` from `.fvmrc`.
 - Feature code belongs in `lib/app/modules/<feature_name>/` using GetX
   bindings, controllers, views, and widgets.
 - Firebase must be initialized in `AppBootstrap` before dependent services.

@@ -6,6 +6,14 @@
                 "D:/FreshLeaf/FreshLeafApi/artisan",
                 "boost:mcp"
             ]
+        },
+        "dart": {
+            "command": "fvm",
+            "args": [
+                "dart",
+                "mcp-server"
+            ],
+            "cwd": "D:/FreshLeaf/fresh_leaf"
         }
     }
 }

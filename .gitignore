@@ -1,19 +1,12 @@
 # IDE
 .idea/
-.vscode/
+vscode/
 *.swp
 *.swo
 
 # OS
 .DS_Store
 Thumbs.db
-
-# Project Specific
-node_modules/
-vendor/
-.env
-storage/*.key
-.phpunit.result.cache
 
 # Submodule directories are tracked via .gitmodules, 
 # but ignore internal build artifacts if they leak out

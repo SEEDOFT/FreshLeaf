@@ -1,0 +1,7 @@
+{
+    "php.version": "8.5",
+    "phpstan.configFile": "FreshLeafApi/phpstan.neon",
+    "phpstan.rootDir": "FreshLeafApi",
+    "laravel-pint.configPath": "FreshLeafApi/pint.json",
+    "laravel-pint.executablePath": "FreshLeafApi/vendor/bin/pint"
+}

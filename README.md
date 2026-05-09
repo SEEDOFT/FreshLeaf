@@ -47,7 +47,8 @@ flutter pub get
 - **Frontend**: Flutter, GetX State Management, Dio.
 - **AI**: Local Llama.cpp engine + Hybrid Web Search Bridge for real-time internet data.
 - **UI**: Modern Glassmorphism Design with SPA mode enabled.
-- **Marketplace**: B2C model with admin commission logic and verified vendor identities.
+- **Marketplace**: B2C model with admin commission logic, verified vendor identities, and dedicated Vendor product/order tracking panels.
+- **User Engagement**: Fully localized (EN/KM) with digital wallets, AI-assisted shopping, support chat, and a robust User Wishlist.
 
 ## 📄 Project Documentation
 - **[Contract Checklist](./PROJECT_CONTRACT_CHECKLIST.md)**: Live status of API vs Mobile endpoint synchronization.

@@ -1,0 +1,12 @@
+[mcp_servers.laravel-boost.tools.search-docs]
+approval_mode = "approve"
+
+[mcp_servers.laravel-boost]
+command = "php"
+args = ["artisan", "boost:mcp"]
+cwd = "FreshLeafApi"
+
+[mcp_servers.dart]
+command = "fvm"
+args = ["dart", "mcp-server"]
+cwd = "fresh_leaf"

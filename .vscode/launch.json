@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "fresh_leaf",
+            "request": "launch",
+            "type": "dart",
+            "cwd": "fresh_leaf",
+            "args": [
+                "--dart-define-from-file=.env.local"
+            ]
+        },
+        {
+            "name": "fresh_leaf (build apk)",
+            "request": "launch",
+            "type": "dart",
+            "cwd": "fresh_leaf",
+            "args": [
+                "flutter build apk --obfuscate --split-debug-info=./debug-info --dart-define-from-file=.env.prod"
+            ]
+        },
+        {
+            "name": "fresh_leaf (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "cwd": "fresh_leaf",
+            "args": [
+                "flutter build apk --obfuscate --split-debug-info=./debug-info --dart-define-from-file=.env.prod"
+            ]
+        }
+    ]
+}

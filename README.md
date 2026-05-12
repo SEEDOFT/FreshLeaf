@@ -30,7 +30,7 @@ composer install
 cp .env.example .env          # Update your DB and AI settings
 php artisan key:generate
 php artisan migrate --seed
-php ai/setup-ai.php           # Download local AI engine & model
+php ai/setup-ai.php           # Setup AI providers (Ollama, Zen, Gemini)
 ```
 
 ### 3. Mobile Setup (fresh_leaf)
@@ -45,9 +45,9 @@ flutter pub get
 ## 💎 Tech Stack & Features
 - **Backend**: Laravel 13, PHP 8.5 (Property Hooks, Pipe Operator, Asymmetric Visibility).
 - **Frontend**: Flutter, GetX State Management, Dio.
-- **AI**: Local Llama.cpp engine + Hybrid Web Search Bridge for real-time internet data.
+- **AI**: Integrated AI support with Ollama, Zen, and Gemini for operational tasks.
 - **UI**: Modern Glassmorphism Design with SPA mode enabled.
-- **Marketplace**: B2C model with admin commission logic, verified vendor identities, and dedicated Vendor product/order tracking panels.
+- **Marketplace**: B2C model with admin commission logic, verified vendor identities, and dedicated Vendor product/order tracking panels with an audit-ready "Stock with Proof" inventory adjustment system.
 - **User Engagement**: Fully localized (EN/KM) with digital wallets, AI-assisted shopping, support chat, and a robust User Wishlist.
 
 ## 📄 Project Documentation

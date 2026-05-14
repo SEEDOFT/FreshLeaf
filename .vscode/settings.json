@@ -3,5 +3,6 @@
     "phpstan.configFile": "FreshLeafApi/phpstan.neon",
     "phpstan.rootDir": "FreshLeafApi",
     "laravel-pint.configPath": "FreshLeafApi/pint.json",
-    "laravel-pint.executablePath": "FreshLeafApi/vendor/bin/pint"
+    "laravel-pint.executablePath": "FreshLeafApi/vendor/bin/pint",
+    "css.lint.unknownAtRules": "ignore"
 }

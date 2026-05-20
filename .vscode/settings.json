@@ -4,5 +4,22 @@
     "phpstan.rootDir": "FreshLeafApi",
     "laravel-pint.configPath": "FreshLeafApi/pint.json",
     "laravel-pint.executablePath": "FreshLeafApi/vendor/bin/pint",
-    "css.lint.unknownAtRules": "ignore"
+    "css.lint.unknownAtRules": "ignore",
+    // 1. Exclude vendor from file explorer & search
+    "files.exclude": {
+        "**/vendor": true,
+        "**/node_modules": true,
+        "**/bootstrap/cache": true,
+        "**/storage/framework/cache": true
+    },
+    "search.exclude": {
+        "**/vendor": true,
+        "**/node_modules": true
+    },
+    // 2. Stop PHP Language Server from reporting errors/warnings inside vendor
+    "intelephense.diagnostics.undefinedClassConstants": false,
+    "intelephense.diagnostics.undefinedFunctions": false,
+    "intelephense.diagnostics.undefinedMethods": false,
+    "intelephense.diagnostics.undefinedProperties": false,
+    "intelephense.diagnostics.undefinedTypes": false
 }

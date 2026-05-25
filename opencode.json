@@ -14,9 +14,13 @@
             "type": "local",
             "enabled": true,
             "command": [
-                "php",
-                "scripts/mcp/dart-mcp.php"
-            ]
+                "fresh_leaf/.fvm/flutter_sdk/bin/cache/dart-sdk/bin/dart",
+                "mcp-server"
+            ],
+            "environment": {
+                "DART_SDK": "D:\\FreshLeaf\\fresh_leaf\\.fvm\\flutter_sdk\\bin\\cache\\dart-sdk",
+                "FLUTTER_SDK": "D:\\FreshLeaf\\fresh_leaf\\.fvm\\flutter_sdk"
+            }
         }
     }
 }

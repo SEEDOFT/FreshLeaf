@@ -51,9 +51,8 @@ flutter pub get
 - **User Engagement**: Fully localized (EN/KM) with digital wallets, AI-assisted shopping, support chat, and a robust User Wishlist.
 
 ## 📄 Project Documentation
-- **[Contract Checklist](./PROJECT_CONTRACT_CHECKLIST.md)**: Live status of API vs Mobile endpoint synchronization.
-- **[Backend Docs](./FreshLeafApi/README.md)**: Detailed API and AI architecture.
-- **[Mobile Docs](./fresh_leaf/README.md)**: App structure and build guides.
+- **[Backend Docs](./FreshLeafApi/README.md)**: Detailed API endpoints, AI architecture, and project setup.
+- **[Mobile Docs](./fresh_leaf/README.md)**: App structure, state management, and build guides.
 
 ---
 Developed by **SEEDOFT**.

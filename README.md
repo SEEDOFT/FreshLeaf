@@ -42,6 +42,36 @@ flutter pub get
 
 ---
 
+## 🏃‍♂️ How to Run the Project (For Testing)
+
+To fully test the ecosystem (including real-time chat and AI features), you need to run the backend services and the mobile application.
+
+### 1. Start the Backend Services (FreshLeafApi)
+You can start the Laravel server, WebSocket server (Reverb), Queue worker, and Vite all at once using a single command:
+
+```bash
+cd FreshLeafApi
+composer run dev -- --host=0.0.0.0 --port=8000
+```
+*(Note: `--host=0.0.0.0` allows your mobile app/emulator to connect via your local IP address).*
+
+### 2. Configure & Run the Mobile App (fresh_leaf)
+Since the mobile app runs on an emulator or physical device, it **cannot** use `localhost` or `127.0.0.1` to connect to the API.
+1. Find your computer's local network IP address (e.g., `192.168.0.108`).
+2. Open your Flutter environment file (`fresh_leaf/.env.local`). If it doesn't exist, copy it from `.env.example`.
+3. Update the `API_URL` and `REVERB_WS_HOST` to point to your IP:
+   ```env
+   API_URL=http://192.168.0.108:8000/api/v1
+   REVERB_WS_HOST=192.168.0.108
+   ```
+4. Run the app:
+   ```bash
+   cd fresh_leaf
+   fvm flutter run --dart-define-from-file=.env.local
+   ```
+
+---
+
 ## 💎 Tech Stack & Features
 - **Backend**: Laravel 13, PHP 8.5 (Property Hooks, Pipe Operator, Asymmetric Visibility).
 - **Frontend**: Flutter, GetX State Management, Dio.
